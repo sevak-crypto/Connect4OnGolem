@@ -1,0 +1,116 @@
+$coin_w: 50px;
+$coin_h: 50px;
+$rows: 6;
+$cols: 7;
+
+.rack {
+	display: inline-block;
+	border: 2px solid black;
+
+	* {
+		box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+}
+
+.controls, .message {
+	position: relative;
+	width: $cols * $coin_w;
+	height: $coin_h;
+	background: #EEE;
+	visibility: hidden;
+
+	&.enabled {
+		visibility: visible;
+	}
+}
+
+.message {
+	visibility: visible;
+	line-height: $coin_h;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: $coin_h / 2;
+}
+
+.coins {
+	position: relative;
+	width: $cols * $coin_w;
+	height: $rows * $coin_h;
+	background: #BBB;
+	overflow: hidden;
+}
+
+.coin, .control {
+	width: $coin_w;
+	height: $coin_h;
+	position: absolute;
+	left: 0;
+	top: -1 * $coin_h;
+	-moz-transition: top .2s ease-in;
+	-webkit-transition: top .2s ease-in;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		width: $coin_w - 10;
+		height: $coin_h - 10;
+		border-radius: 50%;
+		-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: $coin_w - 20;
+		height: $coin_h - 20;
+		border-radius: 50%;
+		background: rgba(0,0,0,0.2);
+		-moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+		-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+	}
+
+	&.row-0 { top: 0; }
+	&.row-1 { top: 1 * $coin_h; }
+	&.row-2 { top: 2 * $coin_h; }
+	&.row-3 { top: 3 * $coin_h; }
+	&.row-4 { top: 4 * $coin_h; }
+	&.row-5 { top: 5 * $coin_h; }
+
+	&.col-1 { left: 1 * $coin_w; }
+	&.col-2 { left: 2 * $coin_w; }
+	&.col-3 { left: 3 * $coin_w; }
+	&.col-4 { left: 4 * $coin_w; }
+	&.col-5 { left: 5 * $coin_w; }
+	&.col-6 { left: 6 * $coin_w; }
+
+	&.red:before {
+		background: red;
+	}
+
+	&.yellow:before {
+		background: yellow;
+	}
+
+	&.connected:after {
+		background: rgba(255,255,255,0.6);
+	}
+}
+
+.control {
+	opacity: 0.5;
+	top: 0;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+}

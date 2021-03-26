@@ -4,3 +4,5 @@ This is a very basic implementation of [Connect Four](http://en.wikipedia.org/wi
 
 ## Demo
 http://mennovanslooten.github.io/connect4/
+  (just an example demo thats slightly like mine)
+  

@@ -1,0 +1,46 @@
+{
+  "name": "rewire",
+  "version": "3.0.2",
+  "description": "Easy dependency injection for node.js unit testing",
+  "keywords": [
+    "dependency",
+    "injection",
+    "mock",
+    "shim",
+    "module",
+    "unit",
+    "test",
+    "leak",
+    "inspect",
+    "fake",
+    "require"
+  ],
+  "author": {
+    "name": "Johannes Ewald",
+    "email": "mail@johannesewald.de"
+  },
+  "main": "lib/index.js",
+  "homepage": "https://github.com/jhnns/rewire",
+  "bugs": {
+    "url": "https://github.com/jhnns/rewire/issues",
+    "email": "mail@johannesewald.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jhnns/rewire.git"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^4.0.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -R spec",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0"
+  }
+}

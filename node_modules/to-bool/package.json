@@ -1,0 +1,31 @@
+{
+	"name": "to-bool",
+	"version": "0.0.1",
+	"description": "Convert types to boolean.",
+	"main": "source/to-bool.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/perry-mitchell/to-bool.git"
+	},
+	"keywords": [
+		"bool",
+		"boolean",
+		"convert",
+		"cast"
+	],
+	"author": "Perry Mitchell <perry@perrymitchell.net>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/perry-mitchell/to-bool/issues"
+	},
+	"homepage": "https://github.com/perry-mitchell/to-bool",
+	"devDependencies": {
+		"grunt":					"0.4.x",
+		"grunt-contrib-jshint":		"0.11.x",
+		"grunt-contrib-nodeunit":	"0.4.x",
+		"load-grunt-tasks":			"3.2.x"
+	}
+}

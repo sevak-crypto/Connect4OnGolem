@@ -1,0 +1,5 @@
+  
+bestmove e2e4
+exec time:213.6631
+depth:1
+hash:hash22

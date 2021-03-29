@@ -8,7 +8,7 @@ WORKDIR /golem/work
 RUN chmod -R 777 /golem/work
 
 RUN mkdir /golem/code2
-ADD ./chess_engine /golem/code2/chess_engine
+ADD ./chess_engine /golem/code2/Connect4_Engine
 ADD ./input.txt /golem/code2/input.txt
 RUN chmod -R 777 /golem/code2
 RUN chmod -R 777 /golem/work

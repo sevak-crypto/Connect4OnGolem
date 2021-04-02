@@ -1,9 +1,31 @@
+{
     "name": "connect-4-on-golem",
     "description": "Connect 4 on Golem",
     "scripts": {
         "start": "node ./js/c4.js"
-        "start": "nodemon --inspect=0.0.0.0 src/index.js",
-         "start:prod": "node src/index.js"
+
     },
     "author": "Sevak Singh <GameDevSingh@gmail.com>",
     "license": "LGPL-3.0",
+    "dependencies": {
+        "bluebird": "^3.5.0",
+        "chess.js": "^0.11.0",
+        "crypto": "^1.0.1",
+        "dayjs": "^1.8.31",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jquery": "^3.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "socketio": "^1.0.0",
+        "to-bool": "^0.0.1",
+        "ts-node": "^9.0.0",
+        "uuidv4": "^6.2.6",
+        "yajsapi": "^0.3.1"
+    },
+    "devDependencies": {
+        "tsconfig-paths": "^3.9.0",
+        "typescript": "^3.9.7"
+    }
+}

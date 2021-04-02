@@ -2,7 +2,7 @@
     "name": "connect-4-on-golem",
     "description": "Connect 4 on Golem",
     "scripts": {
-        "start": "node ./js/c4.js"
+        "start": "index.html"
 
     },
     "author": "Sevak Singh <GameDevSingh@gmail.com>",

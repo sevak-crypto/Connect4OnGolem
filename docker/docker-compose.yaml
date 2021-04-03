@@ -1,16 +1,11 @@
-@ -0,0 +1,15 @@
 version: "3"
-
-services:docker run --name="logspout" \
---volume=/var/run/docker.sock:/var/run/docker.sock \
-gliderlabs/logspout \
-syslog+tls://logs.papertrailapp.com:55555
-  example-service:
+example-service:
     build: .
+    container_name: golem # ?
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
       - 9229:9229
-    command: npm start
+#    command: npm start

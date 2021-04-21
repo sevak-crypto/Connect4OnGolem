@@ -1,4 +1,4 @@
-C4.UI = function(_game, _options) {
+UI = function(_game, _options) {
 	var $board = $(_options.container);
 	var $controls;
 	var $coins;

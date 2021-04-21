@@ -1,4 +1,4 @@
-C4.Util = function(_game) {
+Util = function(_game) {
 	var _util = {};
 	var _rack = _game.rack;
 	var _columns = _rack.length;

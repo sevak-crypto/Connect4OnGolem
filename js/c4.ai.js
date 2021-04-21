@@ -1,4 +1,4 @@
-C4.AI = function(_game, _player, _strength) {
+AI = function(_game, _player, _strength) {
 	var _rack = _game.rack;
 	var _columns = _rack.length;
 	var _rows = _rack[0].length;
